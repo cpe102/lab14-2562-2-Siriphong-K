@@ -17,20 +17,19 @@ int main(){
 }
 
 //Write definition of shuffle() here 
-void shuffle(int &x,int &y, int &c, int &z){
-	int A=rand()%4+1;
+void shuffle(int &a,int &b, int &c, int &d){
+	int N=0;
+
+	int *G[]={&a,&b,&c,&d};
+while(N<10){
+	int B=rand()%4;
+	int A=rand()%4;
 	for(int i=0;i<A;i++){
-		int o=x;
-		x=y;
-		y=c;
-		c=z;
-		z=o;
-			for(int i=0;i<A;i++){
-			int o=x;
-			x=y;
-			y=c;
-			c=z;
-		 	z=o;
-		}
+		int o=*G[A];
+		*G[A]=*G[B];
+		*G[B]=o;
 	}
+	N++;	
+}
+
 }

@@ -10,15 +10,15 @@ int main(){
 	int *x=&a;
 	char *y=&c;
 	int **z=&x;
-	cout<<a<<b<<c<<x<<*y<<z<<"\n";
-	cout<<&a<<(void *)b<<(void *)c<<&x<<&y<<&z<<"\n";
+	cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<x<<"\n"<<(void *)y<<"\n"<<z<<"\n\n";
+	cout<<&a<<(void *)b<<(void *)c<<&x<<&y<<&z<<"\n\n";
 	c='F';
-	cout<<a<<b<<c<<x<<*y<<z<<"\n";
+	cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<x<<"\n"<<(void *)y<<"\n"<<z<<"\n\n";
 	*y='W';
-	cout<<a<<b<<c<<x<<*y<<z<<"\n";
+	cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<x<<"\n"<<(void *)y<<"\n"<<z<<"\n\n";
 	*x=6;
-	cout<<a<<b<<c<<x<<*y<<z<<"\n";
+	cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<x<<"\n"<<(void *)y<<"\n"<<z<<"\n\n";
 	**z=7;
-	cout<<a<<b<<c<<x<<*y<<z<<"\n";
+	cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<x<<"\n"<<(void *)y<<"\n"<<z<<"\n\n";
 	return 0;
 }
